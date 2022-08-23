@@ -9,23 +9,42 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
+
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url("backgroundImage.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-rendering: optimizeSpeed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3vmin;
+  color: snow;
 }
 
 .App-link {
-  color: #61dafb;
+  color: blue;
+  text-decoration: none;
+}
+.App-link:hover{
+  transform: scale(1.2);
+  background-color: gray;
+  border-radius: 10px;
+  transition: 1s;
+  color: white;
+}
+.App-link:active{
+  color: black;
+  background-color: white;
+  transform: translateY(5px);
+  transition: 1px;
 }
 
 @keyframes App-logo-spin {
