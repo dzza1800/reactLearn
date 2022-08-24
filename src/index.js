@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Proppy from './newComponent.jsx';
+import Clock from './lifestyle.jsx';
+import Login from './login.jsx';
 import TestFile from './TestFile.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Proppy />
+    <Login />
   </React.StrictMode>
 );
 
