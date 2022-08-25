@@ -1,10 +1,21 @@
 import logo from './bbsWheel.png';
 import './App.css';
+import Login from './login.jsx';
+import Bar from './About.jsx';
+import {Routes, Route, Router} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <Router>
+        <Bar/>
+        <Routes>
+          <Route exact path = "/login">
+            <Login />
+          </Route>
+        </Routes>
+        </Router>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Exercise done, im the best

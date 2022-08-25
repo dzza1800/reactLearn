@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Page from './NavPage';
 import Proppy from './newComponent.jsx';
 import Clock from './lifestyle.jsx';
-import Login from './login.jsx';
 import TestFile from './TestFile.js';
+import Basket from './Basket';
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
+    <Basket />
   </React.StrictMode>
 );
 

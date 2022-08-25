@@ -1,5 +1,5 @@
 import './App.css';
-import { Component, useState } from "react";
+import { Component} from "react";
 
 class clock extends Component{
 constructor(props){
