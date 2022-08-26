@@ -1,6 +1,7 @@
 import { useState } from "react"
 import AddItem from "./addItem";
 import ItemsList from "./ItemsList";
+import Links from './Links.jsx';
 const Basket = () => {
     const [item, setItem] = useState("");
     const [Items, setItems] = useState([]);
@@ -26,6 +27,7 @@ const handleList = () => {
 return(
           <div className='App'>
         <header className='App-header'>
+        <Links />
         <>
     <AddItem submitHandler={submitItem} Newitem = {Newitem} newPrice={newPrice} handleAdd={handleList} />
     <h2><ItemsList Items = {Items}/></h2>

@@ -1,4 +1,5 @@
 import './App.css';
+import Links from './Links.jsx';
 import { Component} from "react";
 
 class clock extends Component{
@@ -37,6 +38,7 @@ render(){
 
     <div className='App'>
     <header className='App-header'>
+    <Links />
 <h1 className='AppH1'>{this.state.rand}</h1>
 <button className = 'blah' onClick={this.numberChange5}>Randomises number from 5000</button>
 <button className = 'blah' onClick={this.numberChangeLong}>Randomises number from a mil</button>

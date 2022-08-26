@@ -1,20 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
-import App from './App';
 import Page from './NavPage';
-import Proppy from './newComponent.jsx';
-import Clock from './lifestyle.jsx';
-import TestFile from './TestFile.js';
-import Basket from './Basket';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Basket />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Page />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

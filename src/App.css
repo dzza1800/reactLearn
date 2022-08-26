@@ -37,20 +37,30 @@
   font-size: 3vmin;
   color: snow;
   animation: backFade 3s infinite linear;
+  text-decoration: none;
 }
 
 .App-link {
   color: blue;
   text-decoration: none;
+  text-align: center;
 }
-.App-link:hover{
+.App-link2{
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+  margin: 5px;
+  align-self: flex-start;
+}
+
+.App-link2:hover, .App-link:hover{
   transform: scale(1.2);
   background-color: gray;
   border-radius: 10px;
   transition: 1s;
   color: white;
 }
-.App-link:active{
+.App-link2:active , .App-link:active{
   color: black;
   background-color: white;
   transform: translateY(5px);

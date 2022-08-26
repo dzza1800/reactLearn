@@ -1,21 +1,30 @@
 
 import './App.css';
 import Login from './login.jsx';
-import Bar from './About.jsx';
-import {Routes, Route, Router} from 'react-router-dom';
+import Basket from './Basket.jsx';
+import Gen from './lifestyle.jsx';
+import App from './App.js';
+import Movie from './DataRequest.jsx';
+import {Routes, Route} from 'react-router-dom';
 
 function Page() {
+  
   return (
-
-      <Router>
-        <Bar/>
+    <>
         <Routes>
-          <Route exact path = "/login">
-            <Login />
-          </Route>
+          <Route exact path = "/"
+          element={ <App />}/>
+          <Route path = "/Login"
+          element = {<Login/>}/>
+          <Route path = "/Adding"
+          element = {<Basket/>}/>
+          <Route path = "/Gen"
+          element = {<Gen/>}/>
+          <Route path = "/Movie"
+          element = {<Movie/>}/>
         </Routes>
-        </Router>
 
+        </>
   );
 }
 
