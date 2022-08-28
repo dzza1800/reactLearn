@@ -4,12 +4,12 @@ import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import Page from './NavPage';
 import reportWebVitals from './reportWebVitals';
-
+import Hp from './stateManagementTut';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Page />
+    <Hp />
   </BrowserRouter>
 );
 
